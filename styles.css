@@ -289,19 +289,25 @@ section h2 {
 }
 
 .social-links a {
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 2rem;
     background-color: #9b9b7a;
     color: #ffffff;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
     text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    border: 2px solid #9b9b7a;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(155, 155, 122, 0.2);
 }
 
 .social-links a:hover {
-    background-color: #8a8a6a;
+    background-color: transparent;
+    color: #9b9b7a;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(155, 155, 122, 0.4);
 }
 
 /* FOOTER */

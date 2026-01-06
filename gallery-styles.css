@@ -1,0 +1,139 @@
+/* GALLERY PAGE STYLES */
+
+/* GALLERY HEADER */
+.gallery-header {
+    background: linear-gradient(135deg, #ffffff 0%, #f5f5f0 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom: 2px solid #9b9b7a;
+}
+
+.gallery-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #333333;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.gallery-header p {
+    font-size: 1.2rem;
+    color: #666666;
+}
+
+/* PERFORMANCES SECTION */
+.performances {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.performance {
+    max-width: 1000px;
+    margin: 0 auto 5rem;
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.performance-title {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.performance-details {
+    font-size: 0.95rem;
+    color: #9b9b7a;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.performance-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+/* VIDEO SECTION */
+.video-section h3,
+.photos-section h3 {
+    font-size: 1.3rem;
+    color: #333333;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.video-container {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* PHOTOS SECTION */
+.performance-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.performance-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.performance-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .gallery-header h1 {
+        font-size: 2rem;
+    }
+
+    .performance-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .performance {
+        padding: 2rem 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .performance-title {
+        font-size: 1.5rem;
+    }
+
+    .performance-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .performance-gallery img {
+        height: 200px;
+    }
+
+    .video-container {
+        padding-bottom: 56.25%;
+    }
+}
