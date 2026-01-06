@@ -1,16 +1,4 @@
-/* HERO SECTION */
-.hero {
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    overflow: hidden;
-    padding-left: 4/* RESET & GENERAL STYLES */
+/* RESET & GENERAL STYLES */
 * {
     margin: 0;
     padding: 0;
