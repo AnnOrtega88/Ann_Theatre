@@ -13,34 +13,109 @@
         <div class="nav-container">
             <h1 class="logo">Jane Doe</h1>
             <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#credits">Credits</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <header class="hero" style="background-image: url('About.jpg');">
+    <header id="hero" class="hero" style="background-image: url('About.jpg');">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <img src="headshot.jpg" alt="Jane Doe" class="headshot">
-            <h2>Theatre Actress</h2>
-            <p>Specializing in classical and contemporary theatre</p>
+            <h1>Jane Doe</h1>
+            <p class="tagline">Theatre Actress</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#downloads" class="btn btn-secondary">Download Resume</a>
+            </div>
         </div>
     </header>
+
+    <!-- QUICK FACTS -->
+    <section class="quick-facts">
+        <div class="container">
+            <div class="facts-grid">
+                <div class="fact">
+                    <h3>15+</h3>
+                    <p>Productions</p>
+                </div>
+                <div class="fact">
+                    <h3>8</h3>
+                    <p>Years Professional</p>
+                </div>
+                <div class="fact">
+                    <h3>5+</h3>
+                    <p>Theatre Companies</p>
+                </div>
+                <div class="fact">
+                    <h3>NYC</h3>
+                    <p>Based</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ABOUT SECTION -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About</h2>
-            <p>
-                Jane is a versatile theatre actress with 8 years of professional experience. 
-                She specializes in classical plays and contemporary drama, having performed 
-                at regional and off-Broadway theatres. Jane is passionate about character-driven 
-                storytelling and collaborative theatre-making.
-            </p>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About</h2>
+                    <p>
+                        Jane is a versatile and committed theatre actress with eight years of professional experience. 
+                        Specializing in classical plays and contemporary drama, she has performed at regional theatres, 
+                        off-Broadway productions, and celebrated festivals across the country.
+                    </p>
+                    <p>
+                        Known for her depth of character work and collaborative spirit, Jane brings intelligence and 
+                        nuance to every role. She is passionate about storytelling that challenges audiences and creates 
+                        meaningful theatrical experiences.
+                    </p>
+                    <p>
+                        Jane holds a BFA in Acting and has trained extensively in voice, movement, and Meisner technique. 
+                        When not performing, she teaches acting and mentors emerging artists.
+                    </p>
+                </div>
+                <div class="about-sidebar">
+                    <div class="training-box">
+                        <h3>Training</h3>
+                        <ul>
+                            <li>BFA Acting, XYZ University</li>
+                            <li>Meisner Technique Intensive</li>
+                            <li>Voice & Movement Certification</li>
+                            <li>Shakespeare Summer Intensive</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOWNLOADS SECTION -->
+    <section id="downloads" class="downloads">
+        <div class="container">
+            <h2>Downloads</h2>
+            <div class="download-grid">
+                <a href="#" class="download-card">
+                    <span class="icon">📄</span>
+                    <h3>Headshot</h3>
+                    <p>Professional headshot (300 DPI)</p>
+                </a>
+                <a href="#" class="download-card">
+                    <span class="icon">📋</span>
+                    <h3>Resume</h3>
+                    <p>Complete theatre credits & resume</p>
+                </a>
+                <a href="#" class="download-card">
+                    <span class="icon">🎬</span>
+                    <h3>Reel</h3>
+                    <p>Performance showreel</p>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -70,12 +145,33 @@
                     <p><strong>Year:</strong> 2021</p>
                     <p><strong>Director:</strong> Bess Wohl</p>
                 </div>
+                <div class="credit-item">
+                    <h3>A Doll's House</h3>
+                    <p><strong>Role:</strong> Nora</p>
+                    <p><strong>Theatre:</strong> American Repertory Theater</p>
+                    <p><strong>Year:</strong> 2020</p>
+                    <p><strong>Director:</strong> Anne Bogart</p>
+                </div>
+                <div class="credit-item">
+                    <h3>The Crucible</h3>
+                    <p><strong>Role:</strong> Elizabeth</p>
+                    <p><strong>Theatre:</strong> Shakespeare in the Park</p>
+                    <p><strong>Year:</strong> 2019</p>
+                    <p><strong>Director:</strong> Michael Greif</p>
+                </div>
+                <div class="credit-item">
+                    <h3>Noises Off</h3>
+                    <p><strong>Role:</strong> Brooke</p>
+                    <p><strong>Theatre:</strong> Williamstown Theatre Festival</p>
+                    <p><strong>Year:</strong> 2018</p>
+                    <p><strong>Director:</strong> David Grindley</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- GALLERY SECTION -->
-    <section id="gallery" class="gallery">
+    <!-- GALLERY PREVIEW -->
+    <section class="gallery-preview">
         <div class="container">
             <h2>Gallery</h2>
             <div class="gallery-grid">
@@ -86,17 +182,8 @@
                 <img src="photo5.jpg" alt="Performance photo 5">
                 <img src="photo6.jpg" alt="Performance photo 6">
             </div>
-        </div>
-    </section>
-
-    <!-- REEL SECTION -->
-    <section id="reel" class="reel">
-        <div class="container">
-            <h2>Showreel</h2>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                    title="Showreel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
+            <div class="gallery-cta">
+                <a href="gallery.html" class="btn btn-primary">View Full Gallery</a>
             </div>
         </div>
     </section>
@@ -105,7 +192,11 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Get In Touch</h2>
-            <p>Email: jane@example.com</p>
+            <p>Interested in casting or collaboration?</p>
+            <div class="contact-info">
+                <a href="mailto:jane@example.com" class="btn btn-primary">Email Me</a>
+                <p class="contact-details">jane@example.com | (555) 123-4567</p>
+            </div>
             <div class="social-links">
                 <a href="https://instagram.com" target="_blank">Instagram</a>
                 <a href="https://linkedin.com" target="_blank">LinkedIn</a>
@@ -115,7 +206,10 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>&copy; 2025 Jane Doe. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Jane Doe. All rights reserved.</p>
+            <p class="footer-credit">Proud member of <strong>Actors Equity Association</strong></p>
+        </div>
     </footer>
 
 </body>
