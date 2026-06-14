@@ -51,15 +51,18 @@ figure[data-zoom]:hover img { transform: scale(1.06); }
 @media (max-width: 900px) {
   [data-section="aboutA"] { grid-template-columns: 1fr !important; gap: 48px !important; }
   [data-section="dualcol"] { grid-template-columns: 1fr !important; gap: 48px !important; }
-  /* Credits — drop the lower-priority columns */
-  [data-dir="A"] .credit-head, [data-dir="A"] .credit-row { grid-template-columns: 72px 1.6fr 1fr !important; }
-  [data-dir="A"] .credit-head > :nth-child(4), [data-dir="A"] .credit-row > :nth-child(4),
-  [data-dir="A"] .credit-head > :nth-child(5), [data-dir="A"] .credit-row > :nth-child(5) { display: none !important; }
+  /* Credits — drop the lowest-priority column (Venue) */
+  [data-dir="A"] .credit-head, [data-dir="A"] .credit-row { grid-template-columns: 72px 1.7fr 1.3fr !important; }
+  [data-dir="A"] .credit-head > :nth-child(4), [data-dir="A"] .credit-row > :nth-child(4) { display: none !important; }
+}
+
+/* Hide the inline page links once the bar gets tight (Spanish labels are wide
+   and there's no hamburger menu); the logo + language toggle always stay. */
+@media (max-width: 960px) {
+  .nav-links { display: none !important; }
 }
 
 @media (max-width: 620px) {
-  /* Hide page links on mobile; the language toggle stays visible */
-  .nav-links { display: none !important; }
   /* Gallery — single column stack */
   [data-section="galleryA"] { grid-template-columns: 1fr !important; grid-auto-rows: 240px !important; }
   [data-section="galleryA"] figure { grid-column: auto !important; grid-row: auto !important; }

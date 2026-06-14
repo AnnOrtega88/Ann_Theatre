@@ -177,10 +177,9 @@
   function dirA(t, credits, training, awards, facts) {
     var creditRows = credits.map(function (c) {
       return '' +
-        '<div data-reveal class="credit-row" style="display:grid; grid-template-columns:90px minmax(220px,1.6fr) 1fr 1.3fr 1fr; gap:18px; align-items:baseline; padding:26px 8px; border-bottom:1px solid rgba(239,230,216,.1); transition:background .35s, padding-left .35s;">' +
+        '<div data-reveal class="credit-row" style="display:grid; grid-template-columns:90px minmax(240px,1.7fr) 1.3fr 1fr; gap:18px; align-items:baseline; padding:26px 8px; border-bottom:1px solid rgba(239,230,216,.1); transition:background .35s, padding-left .35s;">' +
           '<span style="font-size:12.5px; color:#c47a3f; letter-spacing:.04em;">' + c.date + '</span>' +
           '<span style="line-height:1.2;"><span style="font-family:\'Marcellus\',serif; font-size:27px;">' + c.title + '</span><span style="font-size:13px; color:#8f8273; font-style:italic;"> ' + c.authorTag + '</span></span>' +
-          '<span style="font-size:15px; color:#c8bca8;">' + c.roleDisplay + '</span>' +
           '<span style="font-size:14.5px; color:#8f8273;">' + c.leadL + '</span>' +
           '<span style="font-size:14.5px; color:#8f8273;">' + c.venue + '</span>' +
         '</div>';
@@ -204,7 +203,7 @@
     '<div data-dir="A" style="--pad:52px; background:#120d0a; color:#efe6d8; font-family:\'Hanken Grotesk\',system-ui,sans-serif;">' +
 
       '<nav id="siteNav" data-variant="A" style="position:fixed; top:0; left:0; right:0; z-index:55; display:flex; align-items:center; justify-content:space-between; padding:24px var(--pad); transition:all .5s ease; border-bottom:1px solid rgba(239,230,216,0);">' +
-        '<a href="#top" style="font-family:\'Marcellus\',serif; font-size:23px; letter-spacing:.04em;">Ann Ortega</a>' +
+        '<a href="#top" style="font-family:\'Marcellus\',serif; font-size:23px; letter-spacing:.04em; white-space:nowrap;">Ann Ortega</a>' +
         '<div style="display:flex; align-items:center; gap:26px;">' +
           '<div class="nav-links" style="display:flex; align-items:center; gap:32px; font-size:12px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:#c7bca9;">' +
             '<a class="nav-link" href="#about" style="transition:color .3s;">' + t.nav.about + '</a>' +
@@ -227,7 +226,7 @@
             '<span style="width:42px; height:1px; background:#c47a3f;"></span>' +
             '<span style="font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:#dba24f;">' + t.hero.kicker + '</span>' +
           '</div>' +
-          '<h1 data-reveal style="font-family:\'Marcellus\',serif; font-weight:400; font-size:clamp(66px,11vw,162px); line-height:.92; letter-spacing:.005em;">' + t.hero.name + '</h1>' +
+          '<h1 data-reveal style="font-family:\'Marcellus\',serif; font-weight:400; font-size:clamp(50px,6.5vw,108px); line-height:.96; letter-spacing:.005em;">' + t.hero.name.replace(' ', '<br>') + '</h1>' +
           '<div data-reveal style="margin-top:16px; font-family:\'Marcellus\',serif; font-style:italic; font-size:clamp(19px,2.2vw,28px); color:#e8c88e; letter-spacing:.02em;">' + t.hero.tagline + '</div>' +
           '<p data-reveal style="margin-top:22px; max-width:560px; font-size:18px; line-height:1.62; color:#c7bca9;">' + t.hero.line + '</p>' +
           '<div data-reveal style="display:flex; flex-wrap:wrap; gap:14px; margin-top:38px;">' +
@@ -283,8 +282,8 @@
             '</div>' +
             '<p style="font-size:14px; color:#8f8273; max-width:280px; line-height:1.6; padding-bottom:10px;">' + t.work.note + '</p>' +
           '</div>' +
-          '<div data-reveal class="credit-head" style="display:grid; grid-template-columns:90px minmax(220px,1.6fr) 1fr 1.3fr 1fr; gap:18px; padding:0 8px 14px; border-bottom:1px solid rgba(239,230,216,.14); font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:#6a6053;">' +
-            '<span>' + t.work.colDate + '</span><span>' + t.work.colProd + '</span><span>' + t.work.colRole + '</span><span>' + t.work.colDir + '</span><span>' + t.work.colVenue + '</span>' +
+          '<div data-reveal class="credit-head" style="display:grid; grid-template-columns:90px minmax(240px,1.7fr) 1.3fr 1fr; gap:18px; padding:0 8px 14px; border-bottom:1px solid rgba(239,230,216,.14); font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:#6a6053;">' +
+            '<span>' + t.work.colDate + '</span><span>' + t.work.colProd + '</span><span>' + t.work.colDir + '</span><span>' + t.work.colVenue + '</span>' +
           '</div>' +
           '<div style="display:flex; flex-direction:column;">' + creditRows + '</div>' +
         '</div>' +
